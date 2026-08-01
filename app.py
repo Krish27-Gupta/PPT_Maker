@@ -32,10 +32,10 @@ if not all(ALL_API):
 
 elif all(ALL_API):
   st.success("API KEYS LOADED")
-  option = ["gemini7-3.5-flash-lite","gemini-3.5-flash",
+  options = ["gemini7-3.5-flash-lite","gemini-3.5-flash",
             "gemini7-3.5-flash-lite","gemini-3.5-flash"]
 
-  selected_model = st.selectbox("Select-Model", option = option)
+  selected_model = st.selectbox("Select-Model", options = options)
   
   model = ChatGoogleGenerativeAI(
     model = "gemini-3.5-flash",
